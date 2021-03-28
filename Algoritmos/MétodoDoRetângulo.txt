@@ -1,0 +1,40 @@
+/* 
+ * Método do retângulo composto
+ * 
+ * Função escolhida f(x) = 3e^{-t}sin(\pi t)
+ * 
+ * Limites de integração : [0, 1]
+ * 
+ * Número de intervalos: N = 369
+ *
+ * O parâmetro 'opc' define qual dos pontos, inicial ('i') ou final ('f'),
+ * deve ser utilizado.
+ */
+
+ Inicio algoritmo
+ 
+  // Método do retângulo composto
+  FUNÇÂO rectangle(initial, final, n_interval, opc = 'i')
+    // Passo
+    h_size = (final - initial) / n_interval.to_f
+    // Escolha, ponto inicial ou final?
+    initial += h_size SE opc == 'f'
+    // Ponto da vez
+    point = 1
+    // Resultado da integração numérica
+    result = 0
+    // Laço principal
+    ENQUANTO point <= n_interval FAÇA
+      // Somatório
+      result += h_size * f(initial)
+      // Incremento na variável 'x'
+      initial += h_size
+      // Ponto da vez
+      point += 1
+    FIM ENQUANTO
+    // Retornando o resultado da integração numérica
+    RETORNE result
+  FIM FUNÇÃO
+
+ Fim algoritmo
+ 

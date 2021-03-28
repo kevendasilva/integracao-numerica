@@ -1,0 +1,16 @@
+- Método de Simpson 1/3 e 3/8
+  - Utilização de funções não-lineares para aproximação.
+  
+  - Método de Simpson 1/3
+    - São utilizados dois subinteravalos para determinar o 'valor' da integral
+    
+    - Método de Simpson 1/3 composto
+      - Condições para tilização do método:
+      # O tamanho do intervalo (h) deve ser igual para todos os intervalos, ou seja,
+      x_{i + 1} - x_i = h , onde x_1 = a e x_n = b e i = 1, 2, 3, ..., n. 
+
+  - Método de Simpson 3/8
+    - São utilizados três subinteravalos para determinar o 'valor' da integral
+
+    - Método de Simpson 3/8 composto
+      - Novamente, podemos ver o método como uma soma ponderada.

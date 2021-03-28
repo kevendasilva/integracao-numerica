@@ -1,0 +1,36 @@
+/* 
+ * Método do ponto central composto
+ * 
+ * Função escolhida f(x) = 3e^{-t}sin(\pi t)
+ * 
+ * Limites de integração : [0, 1]
+ * 
+ * Número de intervalos: N = 369
+ *
+ */
+
+ Inicio algoritmo
+
+  FUNÇÃO trapezoid(initial, final, n_interval)
+    // Passo
+    h_size = (final - initial) / n_interval.to_f
+    // Ponto da vez
+    point = 1
+    // Ponto inicial
+    a = initial
+    // Resultado da integração numérica
+    result = 0
+    // Laço principal
+    ENQUANTO point <= n_interval FAÇA
+      result += h_size * Function.f(initial)
+      // Incremento na variável 'x'
+      initial += h_size
+      // Ponto da vez
+      point += 1
+    FIM ENQUANTO
+    result += h_size * (Function.f(a) + Function.f(final)) / 2
+    // Retornando o resultado 
+    RETORNE result 
+  FIM FUNÇÃO
+
+ Fim algoritmo

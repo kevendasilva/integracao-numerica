@@ -1,0 +1,5 @@
+- Método trapezoidal
+  - Utilização de um trapezóide para melhor aproximação da área abaixo da curva.
+
+  - Método trapezoidal composto
+    - Novamente, a divisão em N subinteravalos.

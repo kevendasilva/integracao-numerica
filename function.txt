@@ -1,0 +1,3 @@
+my function
+
+f(x) = 3e^{-t}sin(\pi t)

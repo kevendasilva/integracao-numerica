@@ -1,0 +1,15 @@
+- Método do retângulo
+  - Não esteja muito além ou muito aquém
+   
+  - Método do retângulo composto
+    - Utiliza-se um número N de intervalos, e nestes são calculados os valores da integral a partir
+    do método do retângulo
+
+- Método do ponto central
+  - Diferentemente do método do retângulo, onde são utilizados x = a ou x = b, no método do ponto
+  central é utilizado o valor intermediário, ou seja, x = (a + b) / 2.
+
+  - Método do ponto central composto
+    - De forma semelhante ao método do retângulo composto, onde dividimos o domínio em N subinteravalos,
+    no método do ponto central composto, também realizamos o processo de divisão do domínio.
+

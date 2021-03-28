@@ -1,0 +1,12 @@
+Notas dos fundamentos do capitulo
+
+- Breve descrição do uso de integrais e integração em problemas da ciência e engenharia.
+- Descrição do processo de integração e interpretação da operação (integrar).
+
+- Motivação do capítulo (integração numérica).
+
+- Métodos abertos e métodos fechados (de novo?). Uma breve explicação.
+
+- Fórmulas de integração de Newton-Cotes
+  - Uma bela utilização da interpolação. Utilizar uma distribuição de pontos, e a partir deles, 
+  estimar uma curva (dada por um polinômio ou função mais simples), e então realizar a integração.
