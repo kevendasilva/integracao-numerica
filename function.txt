@@ -1,3 +1,27 @@
 my function
 
 f(x) = 3e^{-t}sin(\pi t)
+
+
+Teste
+~=~=~=~=~=~= Integração numérica =~=~=~=~=~=~
+  Função escolhida f(x) = 3e^{-t}t^3
+  Limites de integração : [3, 9]
+
+### Método do retângulo composto (iterativo) ###
+
+  O erro escolhido foi: 0.003
+  Resultado da integração numérica: 11.3018905074534
+
+#########
+
+ 
+### Método trapezóide composto (iterativo) ###
+
+  O erro escolhido foi: 0.003
+  Resultado da integração numérica: 11.301890207377127
+
+#########
+
+ 
+~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~

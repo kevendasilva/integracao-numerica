@@ -6,6 +6,9 @@ module Function
   CONST_PI = Math::PI
 
   def self.f(value)
+    # Função primária
     3 * (CONST_E**-value) * Math.sin(CONST_PI * value)
+    # Função de teste
+    # 3 * (CONST_E**-value)*(value**3)
   end
 end

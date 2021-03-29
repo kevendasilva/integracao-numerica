@@ -12,7 +12,9 @@ class Main
   puts '  Função escolhida f(x) = 3e^{-t}sin(\pi t)'
   puts '  Limites de integração : [0, 1]'
   puts "\n"
-
+  # Caso queira utilizar o método não iterativo, remova o '=begin' e o '=end'
+=begin
+  Caso não iterativo
   # Método do retângulo composto
   puts '### Método do retângulo composto ###'
   puts "\n"
@@ -55,7 +57,32 @@ class Main
   puts "  Resultado da integração numérica: #{m.trapezoid(0, 1, n)}"
   puts "\n"
   puts '#########'
-  
+=end
+
+  # Método do retângulo composto (iterativo)
+  puts '### Método do retângulo composto (iterativo) ###'
+  puts "\n"
+  # Erro escolhido
+  err = 0.003
+  puts "  O erro escolhido foi: #{err}"
+  # Retornando o resultado da integração numérica com o método
+  puts "  Resultado da integração numérica: #{m.rectangle_ite(0, 1, err)}"
+  puts "\n"
+  puts '#########'
+  puts "\n \n"
+
+  # Método trapezóide composto (iterativo)
+  puts '### Método trapezóide composto (iterativo) ###'
+  puts "\n"
+  # Erro escolhido
+  puts "  O erro escolhido foi: #{err}"
+  # Retornando o resultado da integração numérica com o método
+  puts "  Resultado da integração numérica: #{m.trapezoid_ite(0, 1, err)}"
+  puts "\n"
+  puts '#########'
+
+  puts "\n \n"
+
   # Final
   puts '~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~'
   puts "\n \n"
