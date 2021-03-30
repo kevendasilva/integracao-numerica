@@ -2,7 +2,6 @@ my function
 
 f(x) = 3e^{-t}sin(\pi t)
 
-
 Teste
 ~=~=~=~=~=~= Integração numérica =~=~=~=~=~=~
   Função escolhida f(x) = 3e^{-t}t^3
