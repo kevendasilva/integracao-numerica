@@ -10,7 +10,7 @@ class Main
 
   puts '~=~=~=~=~=~= Integração numérica =~=~=~=~=~=~'
   puts '  Função escolhida f(x) = 3e^{-t}sin(\pi t)'
-  puts '  Limites de integração : [0, 1]'
+  puts '  Limites de integração : [0, 1/2]'
   puts "\n"
   # Caso queira utilizar o método não iterativo, remova o '=begin' e o '=end'
 =begin
@@ -66,7 +66,7 @@ class Main
   err = 0.003
   puts "  O erro escolhido foi: #{err}"
   # Retornando o resultado da integração numérica com o método
-  puts "  Resultado da integração numérica: #{m.rectangle_ite(0, 1, err)}"
+  puts "  Resultado da integração numérica: #{m.rectangle_ite(0, 0.5, err)}"
   puts "\n"
   puts '#########'
   puts "\n \n"
@@ -77,7 +77,7 @@ class Main
   # Erro escolhido
   puts "  O erro escolhido foi: #{err}"
   # Retornando o resultado da integração numérica com o método
-  puts "  Resultado da integração numérica: #{m.trapezoid_ite(0, 1, err)}"
+  puts "  Resultado da integração numérica: #{m.trapezoid_ite(0, 0.5, err)}"
   puts "\n"
   puts '#########'
 

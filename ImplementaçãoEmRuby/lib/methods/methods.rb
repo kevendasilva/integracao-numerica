@@ -9,7 +9,10 @@ class Methods
   CONST_PI = Math::PI
 
   # Função primária
-  INT_REAL = (3 * CONST_PI / (CONST_PI**2 + 1))*(1/CONST_E + 1)
+  # [0, 1]
+  # INT_REAL = (3 * CONST_PI / (CONST_PI**2 + 1)) * (1 / CONST_E + 1)
+  # [0, 1/2]
+  INT_REAL = (3 / (CONST_PI**2 + 1)) * ((-1 / Math.sqrt(CONST_E)) + CONST_PI)
   # Função de teste
   # INT_REAL = -3 * ((-78 / CONST_E**3) + (1032 / (CONST_E**9)))
 
@@ -27,6 +30,7 @@ class Methods
       rectangle_ite(initial, final, error, n_interval)
     else
       # Caso o erro apresentado seja menor ou igual, retorna o valor encontrado
+      puts n_interval
       result
     end
   end
@@ -68,6 +72,7 @@ class Methods
       trapezoid_ite(initial, final, error, n_interval)
     else
       # Caso o erro apresentado seja menor ou igual, retorna o valor encontrado
+      puts n_interval
       result
     end
   end
