@@ -1,36 +1,36 @@
-/* 
- * Método do ponto central composto
- * 
- * Função escolhida f(x) = 3e^{-t}sin(\pi t)
- * 
- * Limites de integração : [0, 1]
- * 
- * Número de intervalos: N = 369
- *
- */
-
- Inicio algoritmo
-
-  FUNÇÃO trapezoid(initial, final, n_interval)
-    // Passo
-    h_size = (final - initial) / n_interval.to_f
-    // Ponto da vez
-    point = 1
-    // Ponto inicial
-    a = initial
-    // Resultado da integração numérica
-    result = 0
-    // Laço principal
-    ENQUANTO point <= n_interval FAÇA
-      result += h_size * Function.f(initial)
-      // Incremento na variável 'x'
-      initial += h_size
-      // Ponto da vez
-      point += 1
-    FIM ENQUANTO
-    result += h_size * (Function.f(a) + Function.f(final)) / 2
-    // Retornando o resultado 
-    RETORNE result 
-  FIM FUNÇÃO
-
- Fim algoritmo
+1. /* 
+2.  * Método trapezoidal composto
+3.  * 
+4.  * Função escolhida f(x) = 3e^{-t}sin(\pi t)
+5.  * 
+6.  * Limites de integração : [0, 1]
+7.  * 
+8.  * Número de intervalos: N = 369
+9.  *
+10. */
+11.
+12. Inicio algoritmo
+13.
+14.  FUNÇÃO trapezoid(initial, final, n_interval)
+15.    // Passo
+16.    h_size = (final - initial) / n_interval.to_f
+17.    // Ponto da vez
+18.    point = 1
+19.    // Ponto inicial
+20.    a = initial
+21.    // Resultado da integração numérica
+22.    result = 0
+23.    // Laço principal
+24.    ENQUANTO point <= n_interval FAÇA
+25.      result += h_size * Function.f(initial)
+26.      // Incremento na variável 'x'
+27.      initial += h_size
+28.      // Ponto da vez
+29.      point += 1
+30.    FIM ENQUANTO
+31.    result += h_size * (Function.f(a) + Function.f(final)) / 2
+32.    // Retornando o resultado 
+33.    RETORNE result 
+34.  FIM FUNÇÃO
+35.
+36. Fim algoritmo

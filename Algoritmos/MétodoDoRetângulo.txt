@@ -1,40 +1,39 @@
-/* 
- * Método do retângulo composto
- * 
- * Função escolhida f(x) = 3e^{-t}sin(\pi t)
- * 
- * Limites de integração : [0, 1]
- * 
- * Número de intervalos: N = 369
- *
- * O parâmetro 'opc' define qual dos pontos, inicial ('i') ou final ('f'),
- * deve ser utilizado.
- */
-
- Inicio algoritmo
- 
-  // Método do retângulo composto
-  FUNÇÂO rectangle(initial, final, n_interval, opc = 'i')
-    // Passo
-    h_size = (final - initial) / n_interval.to_f
-    // Escolha, ponto inicial ou final?
-    initial += h_size SE opc == 'f'
-    // Ponto da vez
-    point = 1
-    // Resultado da integração numérica
-    result = 0
-    // Laço principal
-    ENQUANTO point <= n_interval FAÇA
-      // Somatório
-      result += h_size * f(initial)
-      // Incremento na variável 'x'
-      initial += h_size
-      // Ponto da vez
-      point += 1
-    FIM ENQUANTO
-    // Retornando o resultado da integração numérica
-    RETORNE result
-  FIM FUNÇÃO
-
- Fim algoritmo
- 
+1. /* 
+2.  * Método do retângulo composto
+3.  * 
+4.  * Função escolhida f(x) = 3e^{-t}sin(\pi t)
+5.  * 
+6.  * Limites de integração : [0, 1]
+7.  * 
+8.  * Número de intervalos: N = 369
+9.  *
+10. * O parâmetro 'opc' define qual dos pontos, inicial ('i') ou final ('f'),
+11. * deve ser utilizado.
+12. */
+13.
+14. Inicio algoritmo
+15.
+16.  // Método do retângulo composto
+17.  FUNÇÂO rectangle(initial, final, n_interval, opc = 'i')
+18.    // Passo
+19.    h_size = (final - initial) / n_interval.to_f
+20.    // Escolha, ponto inicial ou final?
+21.    initial += h_size SE opc == 'f'
+22.    // Ponto da vez
+23.    point = 1
+24.    // Resultado da integração numérica
+25.    result = 0
+26.    // Laço principal
+27.    ENQUANTO point <= n_interval FAÇA
+28.      // Somatório
+29.      result += h_size * f(initial)
+30.      // Incremento na variável 'x'
+31.      initial += h_size
+32.      // Ponto da vez
+33.      point += 1
+34.    FIM ENQUANTO
+35.    // Retornando o resultado da integração numérica
+36.    RETORNE result
+37.  FIM FUNÇÃO
+38.
+39. Fim algoritmo
